@@ -40,12 +40,12 @@ export function Comments({ id, uid, comments }) {
 
   return (
     <Bounded>
-      {comments.length > 0 && (
+      {comments   && comments.length > 0 && (
         <>
           <Heading as="h2" size="3xl" className="mt-12">
             What people are saying
           </Heading>
-          {comments.map((comment, index) => (
+          {comments && comments.map((comment, index) => (
             <div className="p-6 border my-4" key={index}>
               <header className="text-sm">
                 {`Posted by ${comment.nickname} on ${new Date(
